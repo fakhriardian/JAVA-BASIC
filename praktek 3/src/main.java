@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
 class tv{
-    boolean OnOff = false;
+    boolean power = false;
     int channel = 1, volume = 0;
 
     public void turnOnOff(){
-        if (OnOff == true){
-            OnOff = false;
+        if (power == true){
+            power = false;
         }else {
-            OnOff = true;
+            power = true;
         }
     }
     public void channelUp(){
@@ -46,7 +46,7 @@ public class main {
 
             System.out.println("-------------------------------");
             System.out.print("TV is ");
-            if (remote.OnOff == true){
+            if (remote.power == true){
                 System.out.println("ON");
                 System.out.print("Now watching ");
                 if (remote.channel == 1){
