@@ -1,3 +1,6 @@
+//Fakhri Ardian Rafi
+//A11.2019.11848
+
 import java.util.Scanner;
 
 class matematika{
@@ -28,6 +31,7 @@ public class main {
         Scanner input = new Scanner(System.in);
 
         while (true){
+//          clear console terminal
             System.out.print("\033[H\033[2J");
             System.out.flush();
 
@@ -46,7 +50,7 @@ public class main {
                     System.out.print("Input ");
                     kalkulator.angka2 = input.nextInt();
                     kalkulator.pertambahan();
-                    System.out.println(+kalkulator.angka1+" + "+ kalkulator.angka2+" = "+ kalkulator.tambah);
+                    System.out.println(+kalkulator.angka1+" + "+kalkulator.angka2+" = "+ kalkulator.tambah);
                     kalkulator.next();
                     break;
                 case "2":
@@ -81,6 +85,5 @@ public class main {
                     break;
             }
         }
-
     }
 }
